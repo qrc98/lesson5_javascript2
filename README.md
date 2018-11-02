@@ -4,20 +4,19 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+11/2/2018
 
 ### Student Name:  
-(First and Last Name)
-
+Quentin Coombs 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+For this assignment we were tasked with creating an application using javascript that was basically a currency calculator/converter. We used a table of currency realted information and from that we were able to construct a program that accurately calculates currency conversions and displays the results
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+
+https://qrc98.github.io/lesson5_javascript2/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. I learned how to create an application using an external js file.
+2. Learned the difference between a switch statement and an if/else statement and how we can use both to deal with multiple meno selections in a program 
+3. I also learned about functions and we can use them in multiple ways, and in certain ways depending on the program or problem at hand.
 

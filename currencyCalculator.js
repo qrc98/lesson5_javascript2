@@ -44,9 +44,23 @@ function calculateCurrency(){
         //Complete this section to declare a variable and initialize the variable
         //to the exchange rate for each country
         //USE THE TABLE PROVIDED FOR VALUES!!!
+        
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
         var AWG = 1.78511;
-
+        var BSD = 1.0000;
+        var XBT = 0.00015;
+        var GBP = 0.76826;
+        var CAD = 1.30976;
+        var CLP = 683.205;
+        var CNY = 6.93780;
+        var CUP = 25.0000;
+        var DKK = 6.49079;
+        var EUR = 0.87007;
+        var EGP = 17.8726;
+        var HKD = 7.83955;
+        var IRR = 42000;
+        var NGN = 361.969;
+        
          
          
          
@@ -78,6 +92,73 @@ function calculateCurrency(){
         *********************************************************************************************/
          
          //Calculate the exchange rate and set the country prefix using a selection statement
+         
+         
+         switch ( exchangeRate = usdAmount * countryName ) {
+             
+             case "0":
+                 
+                 document.getElementById( countryName = "AUD" ).innerHTML = "The exchange rate for the Austrailian Dollar is:" + exchangeRate;
+            break;  
+            
+             case "1":
+                 document.getElementById( countryName = "AWG" ).innerHTML = "The exchange rate for the Arubian Floran is:" + exchangeRate;
+            break;
+            
+             case "2":
+                  document.getElementById( countryName = "BSD").innerHTML = "The exchange rate for the Bahamian Dollar is:" + exchangeRate;
+            break;
+            
+             case "3":
+                  document.getElementById( countryName = "XBT" ).innerHTML = "The exchange rate for the Bitcoin is:" + exchangeRate;
+            break;
+            
+             case "4":
+                  document.getElementById( countryName = "GBP" ).innerHTML = "The exchange rate for the British Pound is:" + exchangeRate;
+            break;
+                 
+             case "5":
+                  document.getElementById( countryName = "CAD" ).innerHTML = "The exchange rate for the Canadian Dollar is:" + exchangeRate;
+            break;
+            
+             case "6":
+                  document.getElementById( countryName = "CLP" ).innerHTML = "The exchange rate for the Chilean Pesso is:" + exchangeRate;
+            break;
+            
+             case "7":
+                  document.getElementById( countryName = "CNY" ).innerHTML = "The exchange rate for the Chinese Yuan Renminibi is:" + exchangeRate;
+            break;
+            
+             case "8":
+                  document.getElementById( countryName = "CUP" ).innerHTML = "The exchange rate for the Cuban Peso is:" + exchangeRate;
+            break;
+             
+             case "9":
+                  document.getElementById( countryName = "DKK").innerHTML = "The exchange rate for the Danish Krone is:" + exchangeRate;
+            break;
+            
+             case "10":
+                  document.getElementById( countryName = "EUR" ).innerHTML = "The exchange rate for the Euro is:" + exchangeRate;
+            break;
+            
+             case "11":
+                  document.getElementById( countryName = "EGP" ).innerHTML = "The exchange rate for the Egyptian Pound is:" + exchangeRate;
+            break;
+            
+             case "12":
+                  document.getElementById( countryName = "HKD" ).innerHTML = "The exchange rate for the Hong Kong Dollar is:" + exchangeRate;
+            break;
+            
+             case "13":
+                  document.getElementById( countryName = "IRR" ).innerHTML = "The exchange rate for the Iranian Rial is:" + exchangeRate;
+            break;
+            
+             case "14":
+                 document.getElementById( countryName = "NGN" ).innerHTML = "The exchange rate for the Nigerian Niara is:" + exchangeRate;
+            break;
+            
+             }//end of switch 
+         
 
 
 
@@ -103,9 +184,9 @@ function calculateCurrency(){
         ***********************************************************************************************/                                                                                                               
 
 
+        document.getElementById("currencyExchangeInfo").innerHTML= "The currency exchange rate for: " + usdAmount + " buys>>> " + exchangeRate;
 
-
-
+        
 
 
       
@@ -142,14 +223,16 @@ function clearButton () {
                 
         //This code resets the dropdown menu to "Australian Dollar (AUD)".
        
-        
+        document.getElementById("country").reset();
         
         
         //Remove the text from the textfield
-        
+       
+        document.getElementById("usdAmount").value = "";
         
         
         //Remove the currency exchange information from the document where the id is: "currencyExchangeInfo"
-
+         document.getElementById("currencyExchangeInfo").innerHTML = "";
+       
 
 }//end of clearButton function
